@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       # Add your test steps here if needed...
+      # Add a step to list the contents of the directory
+      - name: List directory contents
+        run: ls -la
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
